@@ -1,51 +1,58 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import ReactDom from 'react-dom';
 import './index.css'
 import { notes } from './notes';
 
+function SoundEffects() {
 
-function Violin() {
   return (
     <div className='flexbox'>
     {notes.map( (eachNote) => {
-      // console.log(eachNote);
-      // const {key, note, audio} = eachNote
-      return <MusicNotes key={eachNote.key} eachNote={eachNote} /> 
+      return <SoundEffect key={eachNote.key} eachNote={eachNote} /> 
     })}
     </div>
     );
   }
   
   
-  const MusicNotes = (props) => {
-    const {keycode, note, audio} = props.eachNote;
-    // console.log(props.eachNote);
+  const SoundEffect = (props) => {
+    const {keycode, sound, audio} = props.eachNote;
+
+    
     
     const playAudio = (e) => {
-      // console.log(audio);
-      // console.log(inputRef.current.getAttribute('kbkey'));
-      // console.log(e.key);
-
       if (inputRef.current.getAttribute('kbkey') === e.key){
-        let audioToPlay = new Audio(audio);
-        audioToPlay.currentTime = 2;
+        inputRef.current.className += ' playing'
+        let audiosrc = audioRef.current.getAttribute('src');
+        let audioToPlay = new Audio(audiosrc);
         audioToPlay.play();
+        
       }
     }
 
+    const handleTransition = (e) => {
+        inputRef.current.className = 'sound';
+    }
+
     const inputRef = useRef();
+    const audioRef = useRef();
 
+    //play audio if selected key is down
     useEffect( ()=> {
-      document.addEventListener('keypress', playAudio)
-      return () => window.removeEventListener('keypress', playAudio)
-    }, )
-
+      document.addEventListener('keydown', playAudio)
+      return () => window.removeEventListener('keydown', playAudio) //cleanup
+    })
+ 
     return (
-      <div ref={inputRef} kbkey={keycode} className='musicNote' onClick={playAudio}> Note {note.toUpperCase()} 
-        <p> Press {note}  to play</p>
+      <div onTransitionEnd={handleTransition}  ref={inputRef} kbkey={keycode} className='sound'> 
+        <h1> {keycode.toUpperCase()}</h1>
+        <p> {sound}</p>
+        <audio>
+           <source ref={audioRef} src={audio} type="audio/wav"></source>
+        </audio>
   </div>
   )
 } 
 
 
-ReactDom.render(<Violin />, document.getElementById('root'));
+ReactDom.render(<SoundEffects />, document.getElementById('root'));

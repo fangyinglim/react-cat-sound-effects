@@ -1,3 +1,14 @@
-# Using React to create a simple app to play music notes
+# Using React to create a simple app to play cat sounds
 
-In this project the main goal is for me to get a hang of components in React as well as different Hooks like useEffect and useRef
+### Project objectives: 
+
+* Practice using and getting familiar with React 
+
+### What i learned: 
+
+* React hooks (useEffect, useRef)
+
+* React components 
+
+* Import/Export statements
+

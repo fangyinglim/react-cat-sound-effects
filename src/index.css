@@ -5,7 +5,7 @@
 }
 
 body {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./images/bg-img.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1560114928-40f1f1eb26a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
     background-size: cover;
 }
 
@@ -16,19 +16,48 @@ body {
     align-items: center;
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width:700px) {
+    body {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1572590285030-0ae6a4715671?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80');
+    }
+    
+    
     .flexbox {
         flex-direction: column;
     }
 }
 
-.musicNote {
+.sound {
     height: 5em;
     min-width: 5em;
     width: 5em;
     border: 3px solid white;
     color: rgb(255, 255, 255);
-    margin: 1em;
     padding: 0.5em;
     border-radius: 10%;
+    text-align: center;
+    display: flex;
+    /* to center text inside box*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in;
+
+    box-shadow: 2px 2px 5px 0px;
+
+}
+.sound > h1 {
+    font-size: 1.5rem;
+}
+
+.sound > p {
+    font-size: 0.7rem;
+}
+
+.sound.playing {
+    border: 5px solid rgb(245, 216, 52);
+    position: relative;
+    bottom: 2px;
+    left: 1px;
+    box-shadow: 1px 1px 5px 0px rgb(245, 216, 52);
 }

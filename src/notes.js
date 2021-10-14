@@ -1,50 +1,42 @@
+import hiss from './sounds/hisss.wav'
+import annoyed from './sounds/annoyed-meow.wav'
+import hangry from './sounds/hangry-meow.wav'
+import roar from './sounds/lion-roar.wav'
+import smol from './sounds/smol-meow.wav'
 export const notes = [
     {
-        key: 'c',
+        key: '1',
         keycode: 'c',
-        note: 'c',
-        audio: 'https://www.ee.columbia.edu/~dpwe/sounds/instruments/violin-C4.wav',
+        sound: 'Annoyed Meow',
+        audio: annoyed,
     },
 
     {
-        key: 'd',
+        key: '2',
         keycode: 'd',
-        note: 'd',
-        audio: 'https://www.ee.columbia.edu/~dpwe/sounds/instruments/violin-C4.wav',
+        sound: 'Hangry Meow',
+        audio: hangry,
     },
 
     {
-        key: 'e',
+        key: '3',
         keycode: 'e',
-        note: 'e',
-        audio: 'https://www.ee.columbia.edu/~dpwe/sounds/instruments/violin-C4.wav',
+        sound: 'Hissy Meow',
+        audio: hiss,
     },
 
     {
-        key: 'f',
+        key: '4',
         keycode: 'f',
-        note: 'f',
-        audio: 'https://www.ee.columbia.edu/~dpwe/sounds/instruments/violin-C4.wav',
+        sound: 'ROAR',
+        audio: roar,
     },
 
     {
-        key: 'g',
+        key: '5',
         keycode: 'g',
-        note: 'g',
-        audio: 'https://www.ee.columbia.edu/~dpwe/sounds/instruments/violin-C4.wav',
+        sound: 'Smol Meow',
+        audio: smol,
     },
 
-    {
-        key: 'a',
-        keycode: 'a',
-        note: 'a',
-        audio: 'https://www.ee.columbia.edu/~dpwe/sounds/instruments/violin-C4.wav',
-    },
-
-    {
-        key: 'b',
-        keycode: 'b',
-        note: 'b',
-        audio: 'https://www.ee.columbia.edu/~dpwe/sounds/instruments/violin-C4.wav',
-    }
 ]
