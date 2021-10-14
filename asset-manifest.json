@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-cat-sound-effects/static/css/main.50e81523.chunk.css",
+    "main.js": "/react-cat-sound-effects/static/js/main.aa2dd42b.chunk.js",
+    "main.js.map": "/react-cat-sound-effects/static/js/main.aa2dd42b.chunk.js.map",
+    "runtime-main.js": "/react-cat-sound-effects/static/js/runtime-main.7cba04fe.js",
+    "runtime-main.js.map": "/react-cat-sound-effects/static/js/runtime-main.7cba04fe.js.map",
+    "static/js/2.7febbd53.chunk.js": "/react-cat-sound-effects/static/js/2.7febbd53.chunk.js",
+    "static/js/2.7febbd53.chunk.js.map": "/react-cat-sound-effects/static/js/2.7febbd53.chunk.js.map",
+    "index.html": "/react-cat-sound-effects/index.html",
+    "static/css/main.50e81523.chunk.css.map": "/react-cat-sound-effects/static/css/main.50e81523.chunk.css.map",
+    "static/js/2.7febbd53.chunk.js.LICENSE.txt": "/react-cat-sound-effects/static/js/2.7febbd53.chunk.js.LICENSE.txt",
+    "static/media/annoyed-meow.3fd87f3c.wav": "/react-cat-sound-effects/static/media/annoyed-meow.3fd87f3c.wav",
+    "static/media/hangry-meow.9f8cabaf.wav": "/react-cat-sound-effects/static/media/hangry-meow.9f8cabaf.wav",
+    "static/media/hisss.72f3f397.wav": "/react-cat-sound-effects/static/media/hisss.72f3f397.wav",
+    "static/media/lion-roar.041929ce.wav": "/react-cat-sound-effects/static/media/lion-roar.041929ce.wav",
+    "static/media/smol-meow.285170a9.wav": "/react-cat-sound-effects/static/media/smol-meow.285170a9.wav"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7cba04fe.js",
+    "static/js/2.7febbd53.chunk.js",
+    "static/css/main.50e81523.chunk.css",
+    "static/js/main.aa2dd42b.chunk.js"
+  ]
+}
